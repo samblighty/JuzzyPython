@@ -59,7 +59,7 @@ from juzzyPython.testing.timeRecorder import timeDecorator
 class TimeTester():
 
     def __init__(self) -> None:
-        self.count = 200
+        self.count = 10
         self.serviceIn = 5
         self.foodIn = 5
         self.numberOfzLevels = 4
@@ -405,15 +405,15 @@ if __name__ == "__main__":
     t = TimeTester()
     t.setup()
     print("-------- GT2 Multicore --------")
-    t.getRulebaseGT2MulticoreTimes()
+    #t.getRulebaseGT2MulticoreTimes()
     print("------------- GT2 -------------")
-    t.getRulebaseGT2Times()
+    #t.getRulebaseGT2Times()
     print("------------- IT2 -------------")
-    t.getRulebaseIT2Times()
+    #t.getRulebaseIT2Times()
     print("------------- T1 --------------")
-    t.getRulebaseT1Times()
+    #t.getRulebaseT1Times()
     print("------------ Plot -------------")
-    t.getPlotTimes()
+    #t.getPlotTimes()
     print("------- Control Surface -------")
     t.getControlSurfaceTimes()
 
